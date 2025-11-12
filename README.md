@@ -15,7 +15,7 @@ By the end of this activity, you will be able to:
 - (Optionally) Build and push Docker containers after successful training  
 
 ---
-
+hi
 ## 🧩 Repository Structure
 
 ```
