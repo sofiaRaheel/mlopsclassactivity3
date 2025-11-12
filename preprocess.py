@@ -1,9 +1,24 @@
+# import pandas as pd
+# from sklearn.datasets import load_iris
+
+# iris = load_iris()
+# data = pd.DataFrame(iris.data, columns=iris.feature_names)
+# data['target'] = iris.target
+
+# data.to_csv("data/preprocessed.csv", index=False)
+# print("✅ Data preprocessed and saved to data/preprocessed.csv")
+import os
 import pandas as pd
 from sklearn.datasets import load_iris
 
+# ✅ Ensure data directory exists
+os.makedirs("data", exist_ok=True)
+
+# Load the Iris dataset
 iris = load_iris()
 data = pd.DataFrame(iris.data, columns=iris.feature_names)
 data['target'] = iris.target
 
+# Save preprocessed data
 data.to_csv("data/preprocessed.csv", index=False)
 print("✅ Data preprocessed and saved to data/preprocessed.csv")
